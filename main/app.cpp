@@ -70,7 +70,9 @@ double internal_pressure_without_compression(
     double density, 
     double radius
 ) {
-    return ((-4.0/3.0)*Constants::PI*Constants::universal_gravitational_constant*density*density*radius);
+    return ( (-4.0/3.0)
+    * Constants::PI * Constants::universal_gravitational_constant
+    * density * density * radius);
 }
 
 
@@ -212,10 +214,27 @@ void study_distance_from_center_effect_inside_uniform_sphere() {
     close_csv_and_notif(output, "study_distance_from_center_effect_inside_uniform_sphere"); 
 }
 
-void study_internal_pressure_without_compression() { // dP/dr
+void study_internal_pressure_without_compression() { // dP/dr => dP/dr * dr => dP
+    std::ofstream output = open_csv_and_verifications("../data/study_internal_pressure_without_compression");
 
+    output << "density,radius,dP/dr,delta_r,delta_P,pressure\n";
+
+    double pressure = 0;
+    double prev_r = Constants::earth_radius;
+    for (double i = Constants::earth_radius; i > 0.001; i /= 1.001) {
+        
+        double result = internal_pressure_without_compression(Constants::earth_average_density, i);
+        double delta_r = i - prev_r;
+        double delta_P = result * delta_r;
+        pressure += delta_P;
+
+        output << Constants::earth_average_density << "," << i << "," << result << "," << delta_r << "," << delta_P << "," << pressure << "\n";
+        prev_r = i;
+    }
+    
+    close_csv_and_notif(output, "study_internal_pressure_without_compression");
 }
 
 int main() {
-    study_distance_from_center_effect_inside_uniform_sphere();
+    study_internal_pressure_without_compression();
 }
