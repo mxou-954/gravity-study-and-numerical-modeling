@@ -77,36 +77,49 @@ double internal_pressure_without_compression(
     * density * density * radius);
 }
 
-double mass_from_delta_radius_and_density(double r1, double r2, double density) {
+double mass_from_delta_radius_and_density(double r1, double r2, double density) { // delta mass
     return ((4.0/3.0)
     * Constants::PI
     * ((r1*r1*r1)-(r2*r2*r2))
     * density);
 }
 
-double define_density(double radius){
-    std::vector<Layer> earth_layers = {
-        {0.0,       1221500.0, 12893.6},
-        {1221500.001, 3480000.0, 10900.7},
-        {3480000.001, 5701000.0, 4903.58},
-        {5701000.001, 5771000.0, 3983.94},
-        {5771000.001, 5971000.0, 3848.35},
-        {5971000.001, 6151000.0, 3488.99},
-        {6151000.001, 6291000.0, 3367.16},
-        {6291000.001, 6346600.0, 3377.74},
-        {6346600.001, 6356000.0, 2900.00},
-        {6356000.001, 6368000.0, 2600.00},
-        {6368000.001, Constants::earth_radius, 1020.00}
-    };
+double volume_from_delta_radius(double r1, double r2) { // delta volume
+    return ((4.0/3.0)
+    * Constants::PI
+    * ((r1*r1*r1)-(r2*r2*r2)));
+}
 
+std::vector<Layer> earth_layers = {
+        {0.0,       1221500.0, 12893.6, Constants::test_bulk_modulus},
+        {1221500.0, 3480000.0, 10900.7, Constants::test_bulk_modulus},
+        {3480000.0, 5701000.0, 4903.58, Constants::test_bulk_modulus},
+        {5701000.0, 5771000.0, 3983.94, Constants::test_bulk_modulus},
+        {5771000.0, 5971000.0, 3848.35, Constants::test_bulk_modulus},
+        {5971000.0, 6151000.0, 3488.99, Constants::test_bulk_modulus},
+        {6151000.0, 6291000.0, 3367.16, Constants::test_bulk_modulus},
+        {6291000.0, 6346600.0, 3377.74, Constants::test_bulk_modulus},
+        {6346600.0, 6356000.0, 2900.00, Constants::test_bulk_modulus},
+        {6356000.0, 6368000.0, 2600.00, Constants::test_bulk_modulus},
+        {6368000.0, Constants::earth_radius, 1020.00, Constants::test_bulk_modulus}
+};
+
+double define_density(double radius){
+    
     for(int i = 0; i < earth_layers.size(); i++){
-        if(radius <= earth_layers[i].inner_radius && radius >= earth_layers[i].outer_radius){
+        if(radius >= earth_layers[i].inner_radius && radius <= earth_layers[i].outer_radius){
             return earth_layers[i].density;
         }
     }
 }
 
-
+double delta_V_with_K(double radius, double delta_P, double V_old) {
+    for(int i =0; i <= earth_layers.size(); i++){
+        if(radius >= earth_layers[i].inner_radius && radius <= earth_layers[i].outer_radius){
+            return -(V_old/earth_layers[i].bulk_modulus)*delta_P;
+        }
+    }
+}
 
 // STUDIES
 
@@ -356,6 +369,61 @@ void study_internal_pressure_without_compression_layer_by_layer_PREM() { // dP/d
     close_csv_and_notif(output, "study_internal_pressure_without_compression_layer_by_layer_PREM");
 }
 
+void study_internal_pressure_with_compression_layer_by_layer_PREM() { // dP/dr => dP/dr * dr => dP
+    std::ofstream output = open_csv_and_verifications("../data/study_internal_pressure_with_compression_layer_by_layer_PREM");
+
+    output << "radius,density,delta_mass,outside_mass,enclosed_mass,gravitational_field,dP/dr,delta_r,delta_P,pressure,pressure_before,pressure_shell,V_old,total_volume,delta_V,V_new,new_density\n";
+
+    double prev_r = Constants::earth_radius;
+    double total_mass = 0;
+    double total_volume = 0;
+    for (double i = Constants::earth_radius/0.0001; i > 0.0001; i /= 1.0001) {
+        
+        double density = define_density(i);
+
+        double delta_mass = mass_from_delta_radius_and_density(prev_r, i, density);
+        total_mass += delta_mass;
+
+        prev_r = i;
+    };
+
+    prev_r = Constants::earth_radius;
+    double pressure = 0;
+    double outside_mass = 0;
+    double enclosed_mass = 0;
+    for (double i = Constants::earth_radius/0.0001; i > 0.0001; i /= 1.0001) {
+        
+        double density = define_density(i);
+
+        double delta_mass = mass_from_delta_radius_and_density(prev_r, i, density);
+        outside_mass += delta_mass;
+        enclosed_mass = total_mass - outside_mass;
+        double gravitational_field = gravitational_field_formula(enclosed_mass, i);
+        double dP_dr = (-density)*gravitational_field;
+        double delta_r = i - prev_r;
+
+        double pressure_before = pressure;
+        double delta_P = dP_dr * delta_r;
+        pressure += delta_P;
+
+        double pressure_shell = pressure_before + delta_P / 2.0;
+
+        double V_old = volume_from_delta_radius(prev_r, i);
+        total_volume += V_old;
+
+        double delta_V = delta_V_with_K(i, pressure_shell, V_old); 
+        double V_new = V_old + delta_V; 
+        double new_density = delta_mass/V_new;
+
+        prev_r = i;
+        output << i << "," << density << "," << delta_mass << "," << outside_mass << "," <<
+        enclosed_mass << "," << gravitational_field << "," << dP_dr << "," <<
+        delta_r << "," << delta_P << "," << pressure << "," << pressure_before << "," << 
+        pressure_shell << "," << V_old << "," << total_volume << "," << delta_V << "," << V_new << "," << new_density << "\n";
+    }
+
+    close_csv_and_notif(output, "study_internal_pressure_with_compression_layer_by_layer_PREM");
+}
 
 int main() {
     study_internal_pressure_without_compression_layer_by_layer();
