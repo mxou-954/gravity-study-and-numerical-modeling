@@ -7,6 +7,9 @@
 #include "constants/constants.hpp"
 #include "tools/csv_tools.h"
 #include "layer/layer.h"
+#include "tools/integrals/simple_integrals.h"
+#include "tools/integrals/double_integrals.h"
+#include "tools/integrals/triple_integrals.h"
 
 using namespace std;
 
@@ -426,6 +429,10 @@ void study_internal_pressure_with_compression_layer_by_layer_PREM() { // dP/dr =
 }
 
 int main() {
-    study_internal_pressure_without_compression_layer_by_layer();
-    study_internal_pressure_without_compression_layer_by_layer_PREM();
+    auto f = [](double x, double y, double z) {
+        return 2*x*x*x + 3*y*y - 4*z;
+    };
+
+    double r = integrale3d(f, 0, 1, 0, 1, 0, 1, 1);
+    std::cout << r << "\n";   // 0.5
 }

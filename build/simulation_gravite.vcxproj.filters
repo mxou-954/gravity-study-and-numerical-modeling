@@ -1,19 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\mcour\Desktop\simulation_gravite\main\app.cpp">
+    <ClCompile Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\main\app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\mcour\Desktop\simulation_gravite\tools\csv_tools.cpp">
+    <ClCompile Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\tools\csv_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\tools\integrals\simple_integrals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\tools\integrals\double_integrals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\tools\integrals\triple_integrals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\mcour\Desktop\simulation_gravite\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\margaux\Desktop\gravity-study-and-numerical-modeling\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{0A01B9E4-B4BF-3281-BE59-E599D09C7552}</UniqueIdentifier>
+      <UniqueIdentifier>{7AFE5908-8A9C-35E3-8850-9F47457BC1AC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -4,16 +4,74 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -23,42 +81,37 @@ events:
       
       The output was:
       0
-      Version MSBuild 17.9.8+b34f75857 pour .NET Framework
-      La génération a démarré 25/08/2026 14:33:26.
+      Version MSBuild 17.14.40+3e7442088 pour .NET Framework
+      La g├®n├®ration a d├®marr├® 21/09/2026 15:13:05.
       
-      Projet "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sur le noud 1 (cibles par défaut).
+      Projet "C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
       PrepareForBuild:
-        Création du répertoire "Debug\\".
-        La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
-        Création du répertoire "Debug\\CompilerIdCXX.tlog\\".
+        Cr├®ation du r├®pertoire "Debug\\".
+        La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+        Cr├®ation du r├®pertoire "Debug\\CompilerIdCXX.tlog\\".
       InitializeBuildStatus:
-        Création de "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
-        Mise à jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-      VcpkgTripletSelection:
-        Using triplet "x64-windows" from "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\"
-        Using normalized configuration "Release"
+        Cr├®ation de "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
       ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
       Link:
-        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe
-      AppLocalFromInstalled:
-        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\mcour\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
-        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
         Suppression du fichier "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-        Mise à jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Génération du projet "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" terminée (cibles par défaut).
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      G├®n├®ration du projet "C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" termin├®e (cibles par d├®faut).
       
-      La génération a réussi.
+      La g├®n├®ration a r├®ussi.
           0 Avertissement(s)
           0 Erreur(s)
       
-      Temps écoulé 00:00:01.62
+      Temps ├®coul├® 00:00:01.43
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -66,80 +119,930 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/3.31.3/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/4.3.3/CompilerIdCXX/CompilerIdCXX.exe
       
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.com"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link.exe"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/dotnet/lld-link.com"
+      - "C:/Program Files (x86)/dotnet/lld-link.exe"
+      - "C:/Program Files (x86)/dotnet/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Git/bin/lld-link.com"
+      - "C:/Program Files/Git/bin/lld-link.exe"
+      - "C:/Program Files/Git/bin/lld-link"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/lld-link.com"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/lld-link.exe"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/lld-link"
+      - "C:/composer/lld-link.com"
+      - "C:/composer/lld-link.exe"
+      - "C:/composer/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/lld-link.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/lld-link.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/lld-link"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/lld-link.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/lld-link.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/lld-link"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/margaux/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/margaux/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/margaux/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/lld-link.com"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/lld-link.exe"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/lld-link"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.com"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link"
+      - "C:/xampp/php/lld-link.com"
+      - "C:/xampp/php/lld-link.exe"
+      - "C:/xampp/php/lld-link"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/lld-link.com"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/lld-link.exe"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/lld-link.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/lld-link.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/lld-link"
+      - "C:/Program Files/CMake/bin/cmake.exe/lld-link.com"
+      - "C:/Program Files/CMake/bin/cmake.exe/lld-link.exe"
+      - "C:/Program Files/CMake/bin/cmake.exe/lld-link"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt.com"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt.exe"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files (x86)/dotnet/mt.com"
+      - "C:/Program Files (x86)/dotnet/mt.exe"
+      - "C:/Program Files (x86)/dotnet/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/Git/bin/mt.com"
+      - "C:/Program Files/Git/bin/mt.exe"
+      - "C:/Program Files/Git/bin/mt"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/mt.com"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/mt.exe"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/mt"
+      - "C:/composer/mt.com"
+      - "C:/composer/mt.exe"
+      - "C:/composer/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/mt.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/mt.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/mt"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/mt.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/mt.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/mt"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/margaux/AppData/Roaming/npm/mt.com"
+      - "C:/Users/margaux/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/margaux/AppData/Roaming/npm/mt"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/mt.com"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/mt.exe"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/mt"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.com"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/mt"
+      - "C:/xampp/php/mt.com"
+      - "C:/xampp/php/mt.exe"
+      - "C:/xampp/php/mt"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/mt.com"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/mt.exe"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/mt"
+      - "C:/msys64/ucrt64/bin/mt.com"
+      - "C:/msys64/ucrt64/bin/mt.exe"
+      - "C:/msys64/ucrt64/bin/mt"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/mt.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/mt.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/mt"
+      - "C:/Program Files/CMake/bin/cmake.exe/mt.com"
+      - "C:/Program Files/CMake/bin/cmake.exe/mt.exe"
+      - "C:/Program Files/CMake/bin/cmake.exe/mt"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt.com"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/dotnet/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git/bin/"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/"
+      - "C:/composer/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/margaux/AppData/Roaming/npm/"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/"
+      - "C:/Program Files/CMake/bin/cmake.exe/"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/simulation_gravite/bin/"
+      - "C:/Program Files (x86)/simulation_gravite/sbin/"
+      - "C:/Program Files (x86)/simulation_gravite/"
+    searched_directories:
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.com"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.exe"
+      - "C:/Users/margaux/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc.com"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc.exe"
+      - "C:/Users/margaux/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files (x86)/dotnet/rc.com"
+      - "C:/Program Files (x86)/dotnet/rc.exe"
+      - "C:/Program Files (x86)/dotnet/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/Git/bin/rc.com"
+      - "C:/Program Files/Git/bin/rc.exe"
+      - "C:/Program Files/Git/bin/rc"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/rc.com"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/rc.exe"
+      - "C:/Program Files (x86)/HP/Common/HPDestPlgIn/rc"
+      - "C:/composer/rc.com"
+      - "C:/composer/rc.exe"
+      - "C:/composer/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/rc.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/rc.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/Scripts/rc"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/rc.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/rc.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Python/Python312/rc"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/margaux/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/margaux/AppData/Roaming/npm/rc.com"
+      - "C:/Users/margaux/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/margaux/AppData/Roaming/npm/rc"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/rc.com"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/rc.exe"
+      - "C:/Program Files (x86)/MongoDB Atlas CLI/rc"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.com"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/rc"
+      - "C:/xampp/php/rc.com"
+      - "C:/xampp/php/rc.exe"
+      - "C:/xampp/php/rc"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/rc.com"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/rc.exe"
+      - "C:/Users/margaux/AppData/Roaming/Composer/vendor/bin/rc"
+      - "C:/msys64/ucrt64/bin/rc.com"
+      - "C:/msys64/ucrt64/bin/rc.exe"
+      - "C:/msys64/ucrt64/bin/rc"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/rc.com"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/rc.exe"
+      - "C:/Users/margaux/AppData/Local/Programs/Zed/bin/rc"
+      - "C:/Program Files/CMake/bin/cmake.exe/rc.com"
+      - "C:/Program Files/CMake/bin/cmake.exe/rc.exe"
+      - "C:/Program Files/CMake/bin/cmake.exe/rc"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc.com"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
+      - "C:/Users/margaux/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/simulation_gravite/bin/rc.com"
+      - "C:/Program Files (x86)/simulation_gravite/bin/rc.exe"
+      - "C:/Program Files (x86)/simulation_gravite/bin/rc"
+      - "C:/Program Files (x86)/simulation_gravite/sbin/rc.com"
+      - "C:/Program Files (x86)/simulation_gravite/sbin/rc.exe"
+      - "C:/Program Files (x86)/simulation_gravite/sbin/rc"
+      - "C:/Program Files (x86)/simulation_gravite/rc.com"
+      - "C:/Program Files (x86)/simulation_gravite/rc.exe"
+      - "C:/Program Files (x86)/simulation_gravite/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\margaux\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.1\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\dotnet\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git\\bin"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\composer"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312\\Scripts"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Python\\Python312"
+        - "C:\\Users\\margaux\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\npm"
+        - "C:\\Program Files (x86)\\MongoDB Atlas CLI\\"
+        - "C:\\Program Files (x86)\\HP\\Common\\HPDestPlgIn\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\margaux\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\margaux\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Program Files\\CMake\\bin\\cmake.exe"
+        - "c:\\Users\\margaux\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/simulation_gravite"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/simulation_gravite"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/CMakeScratch/TryCompile-tgaj15"
-      binary: "C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/CMakeScratch/TryCompile-tgaj15"
+      source: "C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/CMakeScratch/TryCompile-9s5721"
+      binary: "C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/CMakeScratch/TryCompile-9s5721"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/CMakeScratch/TryCompile-tgaj15'
+        Change Dir: 'C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/CMakeScratch/TryCompile-9s5721'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6e2fc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Version MSBuild 17.9.8+b34f75857 pour .NET Framework
-        La génération a démarré 25/08/2026 14:33:28.
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_843fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Version MSBuild 17.14.40+3e7442088 pour .NET Framework
+        La g├®n├®ration a d├®marr├® 21/09/2026 15:13:07.
         
-        Projet "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\cmTC_6e2fc.vcxproj" sur le noud 1 (cibles par défaut).
+        Projet "C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9s5721\\cmTC_843fb.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
         PrepareForBuild:
-          Création du répertoire "cmTC_6e2fc.dir\\Debug\\".
-          La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
-          Création du répertoire "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\Debug\\".
-          Création du répertoire "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\".
+          La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+          Cr├®ation du r├®pertoire "C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9s5721\\Debug\\".
+          Cr├®ation du r├®pertoire "cmTC_843fb.dir\\Debug\\cmTC_843fb.tlog\\".
         InitializeBuildStatus:
-          Création de "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
-          Mise à jour de l'horodatage "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\unsuccessfulbuild".
-        VcpkgTripletSelection:
-          Using triplet "x64-windows" from "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Debug"
+          Cr├®ation de "cmTC_843fb.dir\\Debug\\cmTC_843fb.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+          Mise ├á jour de l'horodatage "cmTC_843fb.dir\\Debug\\cmTC_843fb.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6e2fc.dir\\Debug\\\\" /Fd"cmTC_6e2fc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
-          Compilateur d'optimisation Microsoft (R) C/C++ version 19.39.33523 pour x64
-          Copyright (C) Microsoft Corporation. Tous droits réservés.
-          cl /c /I"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6e2fc.dir\\Debug\\\\" /Fd"cmTC_6e2fc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_843fb.dir\\Debug\\\\" /Fd"cmTC_843fb.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilateur d'optimisation Microsoft (R) C/C++ version┬á19.44.35228 pour x64
+          Copyright (C) Microsoft Corporation. Tous droits r├®serv├®s.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_843fb.dir\\Debug\\\\" /Fd"cmTC_843fb.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\Debug\\cmTC_6e2fc.exe" /INCREMENTAL /ILK:"cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.ilk" /NOLOGO /LIBPATH:"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/CMakeScratch/TryCompile-tgaj15/Debug/cmTC_6e2fc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/mcour/Desktop/simulation_gravite/build/CMakeFiles/CMakeScratch/TryCompile-tgaj15/Debug/cmTC_6e2fc.lib" /MACHINE:X64  /machine:x64 cmTC_6e2fc.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_6e2fc.vcxproj -> C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\Debug\\cmTC_6e2fc.exe
-        AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\mcour\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\Debug\\cmTC_6e2fc.exe" "C:\\Users\\mcour\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\cmTC_6e2fc.write.1u.tlog" "cmTC_6e2fc.dir\\Debug\\vcpkg.applocal.log"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9s5721\\Debug\\cmTC_843fb.exe" /INCREMENTAL /ILK:"cmTC_843fb.dir\\Debug\\cmTC_843fb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/CMakeScratch/TryCompile-9s5721/Debug/cmTC_843fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/margaux/Desktop/gravity-study-and-numerical-modeling/build/CMakeFiles/CMakeScratch/TryCompile-9s5721/Debug/cmTC_843fb.lib" /MACHINE:X64  /machine:x64 cmTC_843fb.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_843fb.vcxproj -> C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9s5721\\Debug\\cmTC_843fb.exe
         FinalizeBuildStatus:
-          Suppression du fichier "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\unsuccessfulbuild".
-          Mise à jour de l'horodatage "cmTC_6e2fc.dir\\Debug\\cmTC_6e2fc.tlog\\cmTC_6e2fc.lastbuildstate".
-        Génération du projet "C:\\Users\\mcour\\Desktop\\simulation_gravite\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tgaj15\\cmTC_6e2fc.vcxproj" terminée (cibles par défaut).
+          Suppression du fichier "cmTC_843fb.dir\\Debug\\cmTC_843fb.tlog\\unsuccessfulbuild".
+          Mise ├á jour de l'horodatage "cmTC_843fb.dir\\Debug\\cmTC_843fb.tlog\\cmTC_843fb.lastbuildstate".
+        G├®n├®ration du projet "C:\\Users\\margaux\\Desktop\\gravity-study-and-numerical-modeling\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9s5721\\cmTC_843fb.vcxproj" termin├®e (cibles par d├®faut).
         
-        La génération a réussi.
+        La g├®n├®ration a r├®ussi.
             0 Avertissement(s)
             0 Erreur(s)
         
-        Temps écoulé 00:00:01.26
+        Temps ├®coul├® 00:00:01.01
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -149,12 +1052,12 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.39.33523.0
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35228.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
